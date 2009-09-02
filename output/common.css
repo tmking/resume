@@ -1,0 +1,77 @@
+body {
+  font-size: 10pt; }
+  body.border {
+    border: solid gray55 3px; }
+
+#container {
+  margin: 1em auto 0 auto;
+  width: 8.5in;
+  height: 11in;
+  border: solid #e8e8e8 3px; }
+
+#header {
+  font-variant: small-caps;
+  letter-spacing: .05cm;
+  width: 7.5in;
+  margin-top: 0.5in;
+  margin-left: auto;
+  margin-right: auto; }
+  #header h1 {
+    color: #16327d;
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 250%;
+    float: left; }
+  #header h2 {
+    margin-top: 5px;
+    font-weight: normal;
+    font-size: 10pt;
+    text-align: right;
+    float: right; }
+
+#content {
+  margin: 0 auto 0 auto;
+  width: 7.5in;
+  height: 10in;
+  clear: both;
+  font-size: 90%;
+  letter-spacing: .023cm;
+  line-height: 1.5em; }
+  #content p {
+    margin-top: 0;
+    margin-botom: 1em;
+    text-align: justify; }
+  #content h3 {
+    color: #16327d;
+    font-variant: small-caps;
+    font-size: 170%;
+    margin-bottom: 0px; }
+  #content h4 {
+    font-size: 100%;
+    margin-bottom: 0px;
+    margin-top: .7em; }
+  #content ul {
+    margin-top: .5em;
+    padding-left: 2em; }
+  #content ul.history, #content ul.projects {
+    padding-left: 1em; }
+    #content ul.history li, #content ul.projects li {
+      list-style-type: none; }
+
+#print_footer, #display_footer {
+  margin: 0;
+  color: #b8b8b8;
+  font-size: 70%;
+  font-style: oblique;
+  text-align: center; }
+
+#print_footer {
+  display: none; }
+
+a {
+  font-weight: bold;
+  color: #545454;
+  text-decoration: underline; }
+
+a:hover {
+  text-decoration: none; }

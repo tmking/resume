@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+compile '/styles/*' do
+  filter :sass
+  filter :relativize_paths, :type => :css
+end
+
+compile '/' do
+  filter :haml
+  layout 'default'
+end
+
+route '/' do
+  item.identifier + 'index.html'
+end
+
+route '/styles/*' do
+  '/' + item.identifier.split('/')[2] + '.css'
+end
+
+layout '*', :haml

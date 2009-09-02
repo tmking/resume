@@ -1,0 +1,89 @@
+!scaffold =  "solid #e8e8e8 3px"
+!blue = #16327D
+!grey = #545454
+!margin = 1in
+
+body
+  font-size: 10pt
+
+  &.border
+    border: solid gray55 3px
+
+#container
+  margin: 1em auto 0 auto
+  width = 8.5in
+  height = 11in
+  border = !scaffold
+
+#header
+  font-variant: small-caps
+  letter-spacing: .05cm
+  width = 8.5in - !margin
+  margin-top = !margin / 2
+  margin-left: auto
+  margin-right: auto
+
+  h1
+    color = !blue
+    margin-top: 0px
+    font-weight: bold
+    font-size: 250%
+    float: left
+  h2
+    margin-top: 5px
+    font-weight: normal
+    font-size: 10pt
+    text-align: right
+    float: right
+
+#content
+  margin: 0 auto 0 auto
+  width = 8.5in - !margin
+  height = 11in - !margin  
+  clear: both
+  font-size: 90%
+  letter-spacing: .023cm
+  line-height: 1.5em
+  
+  p
+    margin-top: 0
+    margin-botom: 1em
+    text-align: justify
+
+  h3
+    color = !blue
+    font-variant: small-caps
+    font-size: 170%
+    margin-bottom: 0px
+
+  h4
+    font-size: 100%
+    margin-bottom: 0px
+    margin-top: .7em
+
+  ul
+    margin-top: .5em
+    padding-left: 2em
+    
+  ul.history, ul.projects
+    padding-left: 1em
+    li
+      list-style-type: none
+  
+#print_footer, #display_footer
+  margin: 0
+  color: #b8b8b8
+  font-size: 70%
+  font-style: oblique
+  text-align: center
+
+#print_footer
+  display: none
+
+a
+  font-weight: bold
+  color = !grey
+  text-decoration: underline
+
+a:hover
+  text-decoration: none

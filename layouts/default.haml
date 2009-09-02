@@ -1,0 +1,25 @@
+!!!
+%html(xmlns="http://www.w3.org/1999/xhtml")
+  %head
+    %title= @item[:title]
+    %link(href="common.css" rel="stylesheet" type="text/css" media="print, screen")/
+    %link(href="print.css" rel="stylesheet" type="text/css" media="print")/
+    %meta(content='text/html; charset=utf-8' http-equiv='Content-Type')/
+
+  %body
+    #container
+      #header
+        %h1 Timothy M. King
+        %h2
+          3318 Georgia Ave NW #11<br/>
+          Washington, DC 20010<br/>
+          (202) 713-9472<br/>
+          %a(href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#109;&#107;&#64;&#112;&#108;&#97;&#46;&#116;&#111;') &#116;&#109;&#107;&#64;&#112;&#108;&#97;&#46;&#116;&#111;
+
+      #content
+        = yield
+
+    #display_footer
+      Made with nanoc3, haml and sass
+    #print_footer
+      This document lives at http://resume.pla.to/
