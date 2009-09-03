@@ -1,60 +1,41 @@
 %h3 Summary
 %ul
-  %li Twelve years of UNIX/Linux systems administration 
-  %li Nine years of programming and software development 
-  %li Three years of professional marketing experience
-
-%h3 Skills
-%ul
-  %li Web application development with Ruby (Rails and Sinatra) and PHP 
-  %li Web design with XHTML/CSS
-  %li Graphics design with Gimp, Photoshop, InDesign, Flash
-  %li Shell programming with Bash/Zsh
-  %li Working knowledge of C, Lisp, Perl, Python, Javascript
-  %li Linux systems administration with all major distributions (Debian preferred)
-  %li Linux/UNIX server software (Apache, Nginx, Postfix, MySQL, etc.)
-  %li Source control management (git)
+  %li Twelve years of administrating nearly every major distribution of Linux and *BSD systems. Professional experience configuring and maintaining most popular modern services, e.g. Apache, Nginx, Lighttpd, Vsftpd, OpenSSH, Postfix, MySQL.
+  %li Nine years of programming and software development. Professional experience in PHP, Ruby and general web development (XHTML/CSS/Javascript). Familiarity with agile development techniques and object-oriented programming. Conversant in C, Lisp, Perl, Python. Proficient in Bash/Zsh shell scripting. 
+  %li Three years of professional marketing experience with the East coast's largest piano retailer. Skilled with Gimp, Inkscape, Photoshop, InDesign, Flash. Experience with Google adwords and SEO techniques.
 
 %h3 Projects
-%ul.projects
-  %li
-    %h4 Seagull Testing
-    %p I worked with two other developers to rescue an abandoned PHP application designed to provide an interface for students registering for environmental certification courses. We abandoned the buggy PHP codebase and used Sinatra and Sequel to wrap the customer's existing Postgres database and reimplement the desired functionality. 
-  %li
-    %h4 Jordan Kitt's Music lead manage application and corporate website
-    %p Jordan Kitt's had a network of PHP websites that I maintained for years. I eventually migrated off of the dedicated server they were using to a VPS server running Nginx. I then reimplimented the PHP core of the old website as a Rails application.  
-  %li blah
+.projects
+  %h4 Seagull Testing
+  %p I worked with two other developers to rescue an abandoned PHP application designed to provide an interface for students registering for environmental certification courses. We abandoned the buggy PHP codebase and used Sinatra and Sequel to model the customer's existing Postgres database and reimplement the needed functionality.  
+  
+  %h4 Jordan Kitt's Music Corporate Website and Weblead Application
+  %p I migrated Jordan Kitts' network of PHP websites from a dedicated server to a leaner VPS running Nginx, after which I reimplimented the PHP core of the old website as a Rails application. In addition to functioning as the company's corporate web presence, the application generates leads from various customer contact forms and routes them to one of eleven stores based on zip code geolocation (via Geokit). The leads are stored in a MySQL database to facilitate future analysis and reporting. One of the most challenging aspects of this project was developing database models that would be easily compatible with the company's internal MS-SQL database, which is itself a copy (refreshed nightly) of the legacy database used by their inventory/contact management software.
+
+  %h4 Jordan Kitt's Music eStore
+  %p I wrote a simple PHP shopping cart application in 2007 to enable Jordan Kitt's to experiment in online retail. Payment processing was handled by posting form information to PayPal.
+
+  %h4 Personal projects
+  %p These are some personal software projects I have worked on over the years:
+  %ul
+    %li A PHP script that makes a configurable directory tree available for file browsing, downloading and uploading. Supports an exclusion list for files and directories, as well as ftpd-style per-directory banners.
+    %li A PHP script that reads entries from static text files in a directory and presents them in a simple blog-type interface. The most interesting feature of this script was a simple HTML parser I wrote which allowed me to use a custom markup tag to insert footnotes in the flow of the main text, which the script would then place at the bottom of the page.
+    %li <strong>zidentd</strong>: an idented sever implemented entirely in pure bourne shell (without bash extensions) using Dan Bernstein's tcptools.
+    %lil <strong>zinit</strong>: a custom init system that completely replaced sysvinit. It used a single configuration file to configure services. The idea was to have a centralized method of handling system services, which were interfaced with using a single shell script.
 
 %h3 History
-%ul.history
-  %li
-    %h4 
-      2008 &mdash; present: 
-      %a(href="http://wearetitans.net/") We Are Titans Inc.
-    %em Developer / Systems Administrator
-  %li
-    %h4 
-      2003 &mdash; present: 
-      %a(href="http://jordankitts.com/") Jordan Kitt's Music
-    %em Outside Promotions Coordinator / Call Center Manager (2003 - 2006)<br/>
-    %em Webmaster /  Developer / Advertising Administrator (as of 2006)
-  %li
-    %h4 2002 &mdash; 2003: Total Medical Consultants
-    %em Part-time Systems Administrator
-  %li
-    %h4
-      1999 &mdash; 2002:
-      %a(href="http://jordankitts.com/") Jordan Kitt's Music
-    %em Outside Promotions
-  %li
-    %h4 1997 &mdash; 1999:  Jeff King Accounting
-    %em Network Administrator
+.history
+  %h4 
+    2008 &mdash; present: 
+    %a(href="http://wearetitans.net/") We Are Titans Inc.
+  %em Developer / Systems Administrator
 
+  %h4 
+    1999 &mdash; present: 
+    %a(href="http://jordankitts.com/") Jordan Kitt's Music
+  %em Outside Promotions (1999-2003)<br/>
+  %em Outside Promotions Coordinator / Call Center Manager (2003-2006)<br/>
+  %em Webmaster /  Developer / Advertising Administrator (as of 2006)
 
-
-
-
-
-
-
-
+  %h4 2002 &mdash; 2003: Total Medical Consultants
+  %em Part-time Systems Administrator

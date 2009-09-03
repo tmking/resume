@@ -4,3 +4,8 @@ data_sources:
   layouts_root: /
   type: filesystem_compact
 output_dir: output
+
+deploy:
+  default:
+    dst: "pla.to:/home/lordzork/vhosts/resume.pla.to"
+    options: [ '-gpPrvz' ]			

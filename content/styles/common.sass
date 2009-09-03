@@ -6,13 +6,10 @@
 body
   font-size: 10pt
 
-  &.border
-    border: solid gray55 3px
-
 #container
-  margin: 1em auto 0 auto
+  margin: 2em auto 0 auto
   width = 8.5in
-  height = 11in
+  //height = 11in
   border = !scaffold
 
 #header
@@ -41,13 +38,13 @@ body
   width = 8.5in - !margin
   height = 11in - !margin  
   clear: both
-  font-size: 90%
-  letter-spacing: .023cm
+  font-size: 80%
+  letter-spacing: .020cm
   line-height: 1.5em
   
   p
     margin-top: 0
-    margin-botom: 1em
+    margin-bottom: 1em
     text-align: justify
 
   h3
@@ -64,11 +61,16 @@ body
   ul
     margin-top: .5em
     padding-left: 2em
-    
-  ul.history, ul.projects
-    padding-left: 1em
-    li
-      list-style-type: none
+
+  li
+    margin-bottom: 1em
+
+.projects, .history
+  padding-left: 1em
+  ul
+    padding-top: 0
+  li
+    text-align: justify
   
 #print_footer, #display_footer
   margin: 0
