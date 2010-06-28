@@ -11,12 +11,12 @@
     %script(type="text/javascript" src="/cufon-yui.js")
     %script(src='/moderna_400.font.js' type='text/javascript')
     :javascript
-      Cufon.replace('header h1, h2');
+      Cufon.replace('#header h1, h2');
 
 
   %body
     #container
-      %header
+      #header
         .inner
           %h1 Timothy M. King
           %address
@@ -31,7 +31,7 @@
       #content.display= yield
       #content.print= yield
 
-      %footer
+      #footer
         %p.display Made with nanoc, haml and sass.
         %p.print A more recent version of this document may be available at http://resume.pla.to/
 
