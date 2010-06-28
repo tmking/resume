@@ -8,4 +8,4 @@ output_dir: output
 deploy:
   default:
     dst: "pla.to:/home/lordzork/vhosts/resume.pla.to"
-    options: [ '-gpPrvz' ]
+    options: [ '-gpPrvz', "--delete-after" ]

@@ -1,34 +1,47 @@
 body
-  font-size: 9pt
+  font-size: 11pt
   margin: 0
   padding: 0
+  background: #fff
 
 #container
   width: 7.0in
   height: 9.5in
   border: none
 
-#header
+header
   width: 7.0in
   margin: 0
+  color: #000
   a
     font-weight: normal
     text-decoration: underline
 
-#content
-  margin: 0 auto 0 auto
-  width: 7.0in
-  height: 8in   
-
-#display_footer
+#menu
   display: none
 
-#print_footer
-  color: #b8b8b8
-  margin-top: 1.8em
-  padding: 0
+#content.display
+  display: none
+
+#content.print
   display: block
-  font-size: 60%
+  margin: 0 auto 0 auto
+  width: 7.0in
+  height: 8in
+  border: 0
+  h2
+    display: block
+    border-bottom: 1px solid #000
+
+footer
+  display: none
+  .display
+    display: none
+  .print
+    margin-top: 1.8em
+    padding: 0
+    display: block
+    font-size: 60%
 
 a
   color: black

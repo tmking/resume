@@ -2,44 +2,25 @@
 title: Timothy M. King
 ---
 
-%h3 Summary
-%ul
-  %li Twelve years of administrating nearly every major flavor of Linux and *BSD systems. Professional experience configuring and maintaining most popular modern services, e.g. Apache, Nginx, Lighttpd, Vsftpd, OpenSSH, Postfix, MySQL.
-  %li Nine years of programming and software development. Professional experience in PHP, Ruby and general web design (XHTML/CSS/Javascript). Familiarity with agile development techniques and object-oriented programming. Conversant in C, Lisp, Perl, Python. Proficient in Bash/Zsh shell scripting. 
-  %li Three years of professional marketing experience with a major U.S. piano retailer. Skilled with Gimp, Inkscape, Photoshop, InDesign, Flash. Experience with Google adwords and SEO techniques.
+#summary.section
+  %h2 About
+  %p Hello there. I'm a Ruby on Rails web application developer. My development background is in PHP but I also have a lot of experience as a UNIX sysadmin. I am adept at writing shell scripts, and I've dabbled in most of the popular scripting languages, but Ruby is my primary love due to its powerful expressiveness.
+  %p I like to be involved in <i>every</i> stage of a web application's evolution, from page design and layout to server configuration, deployment and maintenance. I'm proficient at HTML/CSS and javascript, and I also have experience doing SEO and Google AdWords. I'm a practitioner of Agile techniques and distributed teamwork.
 
-%h3 Projects
-.projects
-  %h4 Seagull Testing
-  %p I worked with two other developers to rescue an abandoned PHP application designed to provide an interface for students registering for environmental certification courses. We abandoned the buggy PHP codebase and used Sinatra and Sequel to model the customer's existing Postgres database and reimplement the needed functionality.  
-  
-  %h4 Jordan Kitt's Music Corporate Website and Weblead Application
-  %p I migrated Jordan Kitts' network of PHP websites from a dedicated Redhat server to a leaner VPS running Debian/Nginx, after which I rewrote the PHP core of the old website as a Rails application. In addition to functioning as the company's corporate web presence, the application generates leads from various customer contact forms and routes them to one of eleven stores based on zip code geolocation (via Geokit). The leads are stored in a MySQL database to facilitate future analysis and reporting. One of the most challenging aspects of this project was developing database models that would be easily compatible with the company's internal MS-SQL database, which is itself a copy (refreshed nightly) of the legacy Unidata database used by their proprietary inventory/contact management software.
+#projects.section
+  %h2 Projects
+  %h3= link_to 'Your Garden Show', 'http://yourgardenshow.com/'
+  %p Your Garden Show is a social network for gardeners. I was heavily involved in this project from the beginning doing both backend development and frontend javascript features. I continue to maintain the staging and production servers and help with new features as needed.
+  %h3= link_to "AllVoices", 'http://allvoices.com/'
+  %p AllVoices is a platform for open-media journalism. I developed new features for the site over a period of 8 months.
+  %h3= link_to "Jordan Kitt's Music", 'http://jordankitts.com/'
+  %p Jordan Kitt's is the east coast's largest piano retailer. I wrote and maintain a Rails application that handles the company's weblead routing.4
 
-  %h4 Jordan Kitt's Music eStore
-  %p I wrote a simple PHP shopping cart application in 2007 to enable Jordan Kitt's to experiment in online retail. Payment processing was handled by posting form information to PayPal.
-
-  %h4 Personal projects
-  %p These are some personal software projects I have worked on over the years:
-  %ul
-    %li A PHP script that makes a configurable directory tree available for file browsing, downloading and uploading. Supports an exclusion list for files and directories, as well as ftpd-style per-directory banners.
-    %li A PHP script that reads entries from static text files in a directory and presents them in a simple blog-type interface. The most interesting feature of this script was a simple HTML parser I wrote which allowed me to use a custom markup tag to insert footnotes in the flow of the main text, which the script would then place at the bottom of the page.
-    %li An idented sever implemented entirely in pure bourne shell (without bash extensions) using Dan Bernstein's tcptools.
-    %li A custom init system for Linux intended to completely replace sysvinit. The idea was to have a centralized method for handling system services, which were defined in a single config file and interfaced with using a single shell command that provided access to all of the standard daemon function (start/stop/restart/reload/status).
-
-%h3 History
-.history
-  %h4 
-    2008-present: 
-    %a(href="http://wearetitans.net/") We Are Titans Inc.
-  %em Part-time Developer / Systems Administrator
-
-  %h4 
-    1999-present: 
-    %a(href="http://jordankitts.com/") Jordan Kitt's Music
+#history.section
+  %h2 History
+  %h3 2008-present: #{link_to 'We Are Titans', 'http://wearetitans.net'}, co-founder
+  %em Lead Developer / Systems Administrator
+  %h3 1999-2008: #{link_to "Jordan Kitt's Music", "http://jordankitts.com/"}
   %em Outside Promotions (1999-2003)<br/>
   %em Outside Promotions Coordinator / Call Center Manager (2003-2006)<br/>
   %em Webmaster /  Developer / Advertising Administrator (as of 2006)
-
-  %h4 2002-2003: Total Medical Consultants
-  %em Part-time Systems Administrator

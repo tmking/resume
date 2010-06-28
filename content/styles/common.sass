@@ -1,58 +1,141 @@
-$blue: #16327D
+$header_background: #404040
+$header_text: #cbcbcb
+$header_secondary_text: #a1a1a1
+$content_background: #bbbbbb
+$content_border: #a1a1a1
+$content_section: #eaeaea
+
+$yellow: #FEFFE9
+$black: #0A0A0A
+$blue: #1A2F59
+$light-blue: #D4DDE4
+$red: #902D32
 $grey: #545454
+$white: #fff
 $margin: 1in
 
 body
-  font-size: 10pt
+  font-size: 14pt
+  font-family: Verdana
+  background: $content_background
+  color: $header_background
+  margin: 0
+  padding: 0
+
+a
+  font-weight: bold
+  color: $blue
+  text-decoration: none
+
+a:hover
+  text-decoration: none
+  background: $blue
+  color: $content_section
 
 #container
-  margin: 2em auto 0 auto
-  width: 8.5in
-  //height = 11in
-  border: solid #e8e8e8 3px
+  margin: 0 auto
 
-#header
+header
+  background: $header_background
+  color: #b6b6b6
+  height: 90px
   font-variant: small-caps
-  letter-spacing: .05cm
+  padding-top: 30px
+
+  .inner
+    width: 8.5in - $margin
+    margin: 0 auto
+
+    a
+      color: $header_text
+    a:hover
+      background: $header_text
+      color: $header_background
+
+    h1
+      font-variant: small-caps
+      color: $header_text
+      margin: 0
+      font-weight: bold
+      font-size: 250%
+      float: left
+    h2
+      float: left
+      margin-top: 5px
+      font-size: 16pt
+      text-indent: 7px
+    address
+      letter-spacing: .05cm
+      margin-top: 5px
+      font-weight: normal
+      font-style: normal
+      font-size: 10pt
+      text-align: right
+      float: right
+
+#menu
+  padding: 0
+  margin: 2em auto
   width: 8.5in - $margin
-  margin-top: $margin / 2
-  margin-left: auto
-  margin-right: auto
+  text-align: center
+  li
+    list-style-type: none
+    display: inline-block
 
-  h1
-    color: $blue
-    margin-top: 0px
-    font-weight: bold
-    font-size: 250%
-    float: left
-  h2
-    margin-top: 5px
-    font-weight: normal
-    font-size: 10pt
-    text-align: right
-    float: right
+    a
+      display: block
+      margin: 0 10px
+      padding: 8px 12px
+      background: $header_background
+      color: $header_text
+      width: 115px
+      text-decoration: none
+      border: 2px solid transparent
+    a:hover, a.active:hover
+      background: $content_section
+      color: $header_background
+      border: 2px solid $header_background
+    a.activeSlide
+      background: $content_section
+      border: 2px solid $content_border
+      color: $content_border
 
-#content
+#content.print
+  display: none
+
+#content.display
   margin: 0 auto 0 auto
   width: 8.5in - $margin
-  height: 11in - $margin  
+  height: 300px
   clear: both
   font-size: 80%
   letter-spacing: .020cm
   line-height: 1.5em
+  background: $content_section
+  border: 2px solid $content_border
+  margin: 2em auto 2em auto
+  padding: 20px
+
+  .section
+    padding: 10px
+    position: absolute
+
+  #projects, #history
+    display: none
   
   p
     margin-top: 0
     margin-bottom: 1em
     text-align: justify
 
-  h3
-    color: $blue
+  h2
+    padding: 0
     font-variant: small-caps
     font-size: 170%
     margin-bottom: 0px
+    display: none
 
-  h4
+  h3
     font-size: 100%
     margin-bottom: 0px
     margin-top: .7em
@@ -64,27 +147,19 @@ body
   li
     margin-bottom: 1em
 
-.projects, .history
-  padding-left: 1em
-  ul
-    padding-top: 0
-  li
-    text-align: justify
+footer
+  //background: $light_grey
+  width: 8.5in - .70in
+  margin: 0 auto
+  padding: 10px
 
-#print_footer, #display_footer
-  margin: 0
-  color: #b8b8b8
-  font-size: 70%
-  font-style: oblique
-  text-align: center
+  .print, .display
+    margin: 0
+    color: $content_border
+    font-size: 70%
+    font-style: oblique
+    font-weight: bold
+    text-align: center
 
-#print_footer
-  display: none
-
-a
-  font-weight: bold
-  color: $grey
-  text-decoration: underline
-
-a:hover
-  text-decoration: none
+  .print
+    display: none
