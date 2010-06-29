@@ -10,9 +10,6 @@
     %script(src='/jquery-corners.js' type='text/javascript')
     %script(type="text/javascript" src="/cufon-yui.js")
     %script(src='/moderna_400.font.js' type='text/javascript')
-    :javascript
-      Cufon.replace('#header h1, h2');
-
 
   %body
     #container
@@ -23,30 +20,32 @@
             3318 Georgia Ave NW #11<br/>
             Washington, DC 20010<br/>
             (202) 713-9472<br/>
-            %a(href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#109;&#107;&#64;&#112;&#108;&#97;&#46;&#116;&#111;') &#101;&#109;&#97;&#105;&#108;
-            \/ #{link_to 'github', 'http://github.com/lordzork'}
+            %a(href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#109;&#107;&#64;&#112;&#108;&#97;&#46;&#116;&#111;') &#116;&#109;&#107;&#64;&#112;&#108;&#97;&#46;&#116;&#111;
+            \/ #{link_to 'github.com/lordzork', 'http://github.com/lordzork'}
 
           %h2 Ruby on Rails Web Developer
 
-      #content.display= yield
-      #content.print= yield
+      #content
+        .display= yield
+        .print= yield
 
       #footer
         %p.display Made with nanoc, haml and sass.
         %p.print A more recent version of this document may be available at http://resume.pla.to/
 
-:javascript
-  $(document).ready(function(){
-    $('#content').corner();
+    :javascript
+      Cufon.replace('#header h1, h2');
+      $(document).ready(function(){
+        $('#content .display').corner();
 
-    $('#content.display').before('<ul id="menu">').cycle({
-      fx: 'fade',
-      timeout: 0,
-      pager:  '#menu',
-      pagerAnchorBuilder: function(idx, slide) {
-        var text = $('h2', slide).html();
-        return '<li><a href="#">' + text + '</a></li>';
-      }
-    });
-  $('#menu').corner();
-  });
+        $('#content .display').before('<ul id="menu">').cycle({
+          fx: 'fade',
+          timeout: 0,
+          pager:  '#menu',
+          pagerAnchorBuilder: function(idx, slide) {
+            var text = $('h2', slide).html();
+            return '<li><a href="#">' + text + '</a></li>';
+          }
+        });
+      $('#menu').corner();
+      });

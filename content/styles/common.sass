@@ -38,7 +38,7 @@ a:hover
 #header
   background: $header_background
   color: #b6b6b6
-  height: 90px
+  height: 110px
   //font-variant: small-caps
   padding-top: 30px
 
@@ -102,52 +102,53 @@ a:hover
       color: $content_section
       text-decoration: underline
 
-#content.print
+.print
   display: none
 
-#content.display
-  margin: 0 auto 0 auto
-  width: 8.5in - $margin
-  height: 320px
-  clear: both
-  font-size: 80%
-  //letter-spacing: .020cm
-  line-height: 1.5em
-  background: $content_section
-  border: 2px solid $content_border
-  margin: 2em auto 2em auto
-  padding: 20px
+#content
+  .display
+    margin: 0 auto 0 auto
+    width: 8.5in - $margin
+    height: 320px
+    clear: both
+    font-size: 80%
+    //letter-spacing: .020cm
+    line-height: 1.5em
+    background: $content_section
+    border: 2px solid $content_border
+    margin: 2em auto 2em auto
+    padding: 20px
 
-  .section
-    padding: 10px
-    position: absolute
+    .section
+      padding: 10px
+      position: absolute
 
-  #projects, #history
-    display: none
+    .projects, .history
+      display: none
   
-  p
-    margin-top: 0
-    margin-bottom: 1em
-    text-align: justify
+    p
+      margin-top: 0
+      margin-bottom: 1em
+      text-align: justify
 
-  h2
-    padding: 0
-    font-variant: small-caps
-    font-size: 170%
-    margin-bottom: 0px
-    display: none
+    h2
+      padding: 0
+      font-variant: small-caps
+      font-size: 170%
+      margin-bottom: 0px
+      display: none
 
-  h3
-    font-size: 100%
-    margin-bottom: 0px
-    margin-top: .7em
+    h3
+      font-size: 100%
+      margin-bottom: 0px
+      margin-top: .7em
 
-  ul
-    margin-top: .5em
-    padding-left: 2em
+    ul
+      margin-top: .5em
+      padding-left: 2em
 
-  li
-    margin-bottom: 1em
+    li
+      margin-bottom: 1em
 
 #footer
   //background: $light_grey
