@@ -1,51 +1,33 @@
-!!!
-%html(xmlns="http://www.w3.org/1999/xhtml")
+!!!5
+%html(xmlns="http://www.w3.org/1999/xhtml" lang="en")
   %head
     %meta(content='text/html; charset=utf-8' http-equiv='Content-Type')/
     %title= @item[:title]
-    %link(href="common.css" rel="stylesheet" type="text/css" media="print, screen")/
-    %link(href="print.css" rel="stylesheet" type="text/css" media="print")/
-    %script(src='/jquery.min.js' type='text/javascript')
-    %script(src='/jquery.cycle.all.min.js' type='text/javascript')
-    %script(src='/jquery-corners.js' type='text/javascript')
-    %script(type="text/javascript" src="/cufon-yui.js")
-    %script(src='/moderna_400.font.js' type='text/javascript')
+    %link(href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen, print")/
+    %link(href="common.css" rel="stylesheet" media="screen, print")/
+    %link(href="display.css" rel="stylesheet" media="screen")/
+    %link(href="print.css" rel="stylesheet" media="print")/
+    %link(type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/5f07bf32-8d46-41b3-b193-3599da02df2e.css")/
+    %script(src='http://code.jquery.com/jquery-latest.js' type='text/javascript')
+    %script(src='bootstrap/js/bootstrap.min.js' type='text/javascript')
 
   %body
-    #container
-      #header
-        .inner
-          %h1 Timothy M. King
-          %address
-            3318 Georgia Ave NW #11<br/>
-            Washington, DC 20010<br/>
-            (202) 713-9472<br/>
-            %a(href='&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#116;&#109;&#107;&#64;&#112;&#108;&#97;&#46;&#116;&#111;') &#116;&#109;&#107;&#64;&#112;&#108;&#97;&#46;&#116;&#111;
-            \/ #{link_to 'github.com/lordzork', 'http://github.com/lordzork'}
+    .container
+      .row
+        %header.inner.span10.offset1
+          .page-header
+            %h1 Timothy M. King
+            %address
+              %a(href='mailto:tmk@pla.to') tmk@pla.to
+              \/ #{link_to 'github.com/lordzork', 'http://github.com/lordzork'}
 
-          %h2 Ruby on Rails Web Developer
+      #content.row
+        .span10.offset1
+          = yield
 
-      #content
-        .display= yield
-        .print= yield
-
-      #footer
-        %p.display Made with nanoc, haml and sass.
-        %p.print A more recent version of this document may be available at http://resume.pla.to/
-
-    :javascript
-      Cufon.replace('#header h1, h2');
-      $(document).ready(function(){
-        $('#content .display').corner();
-
-        $('#content .display').before('<ul id="menu">').cycle({
-          fx: 'fade',
-          timeout: 0,
-          pager:  '#menu',
-          pagerAnchorBuilder: function(idx, slide) {
-            var text = $('h2', slide).html();
-            return '<li><a href="#">' + text + '</a></li>';
-          }
-        });
-      $('#menu').corner();
-      });
+      .row
+        %footer.span10.offset1.border-bottom
+          %p.display.well
+            %small Made with nanoc, haml, sass, and bootstrap.
+          %p.print
+            %small A more recent version of this document may be available at http://resume.pla.to/

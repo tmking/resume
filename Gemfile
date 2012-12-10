@@ -1,0 +1,11 @@
+source 'http://rubygems.org'
+
+gem 'nanoc3'
+gem 'haml'
+gem 'sass'
+gem 'sequel'
+gem 'sqlite3'
+gem 'rack'
+gem 'mime-types'
+gem 'adsf'
+gem 'systemu'
