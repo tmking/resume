@@ -12,20 +12,4 @@
     %script(src='bootstrap/js/bootstrap.min.js' type='text/javascript')
 
   %body
-    .container
-      .row
-        %header.inner.span10.offset1
-          .page-header
-            %h1 Timothy M. King
-            %address
-              %a(href='mailto:tmk@lordzork.com') tmk@lordzork.com
-              \/ #{link_to 'github.com/lordzork', 'http://github.com/lordzork'}
-
-      #content.row
-        .span10.offset1
-          = yield
-
-      .row
-        %footer.span10.offset1.border-bottom
-          %p.print
-            %small A more recent version of this document may be available at http://resume.pla.to/
+    = yield

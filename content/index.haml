@@ -1,42 +1,101 @@
 ---
 title: Timothy M. King
 ---
+.container
+  .row
+    %header.span12.screen
+      %img{ src: "/me.jpg", alt: "Photo" }
+      %h1 Hello.
+      %h2 I'm Timothy King and this is my professional resume.
+    %header.span12.print
+      %h1 Timothy King
+  .row
+    .span5
+      %h3 About
+      %p.lead I help people solve their business problems by working with them to create comprehensive web application solutions.
+      %p I primarily use Ruby on Rails, and more and more often, Javascript. I've worked with all of the major SQL databases, as well as some of the popular no-SQL options.
+      %p I am also proficient in HTML, CSS, and jQuery (as well as HAML, SASS, and Cofeescript). I also have experience with most of the popular Javscript frameworks such as Ember and Backbone. In summary: <b>I am a full stack developer.</b>
+      %p Additionally, I'm adept at shell scripting and UNIX systems administration and I frequently draw on these skills in my projects. I am familiar with Agile methodologies and distributed teamwork.
+      %p My professional goal is to work in environments in which I can employ the full gamut of these skills, alongside people who value thorough planning, meticulous execution, and good communication.
+      %p To the right, I list some of the many development projects I've contributed to over the years. Occasionally, I also will design, create, and host static boutique sites for friends or businesses with whom I have an especially close relationship. I've listed some of these as well.
+      %p You may also view my #{link_to('github account', 'http://github.com/lordzork')} or email me at #{link_to('tmk@lordzork.com', 'mailto:tmk@lordzork.com')}.
 
-.summary.section
-  %h2 About
-  %p.lead I help people solve their business problems by working with them to create comprehensive web-based solutions.
-  %p My primarily tools are Ruby, Rails, and Javascript. I've worked with all of the major SQL databases, as well as some of the popular no-SQL options. I am also completely proficient in HTML, CSS, and jQuery (as well as HAML, SASS, and Cofeescript). In short: I do both backend and frontend development.
-  %p Additionally, I have extensive experience with Agile methodologies and working on distributed teams. I'm also adept at shell scripting and UNIX systems administration.
-  %p My professional goal is to work in environments in which I can employ the full gamut of these skills, alongside people who value thorough planning, meticulous execution, and good communication.
+      %h3 Timeline
+      %dl
+        %dt 2013: #{link_to 'Haught Codeworks', 'http://haughtcodeworks.com'}
+        %dd Senior devloper for a development firm in Colorado.
 
-.projects.section
-  %h2 Projects
-  %h4= link_to 'Over & Under', 'http://overandunderonline.com/'
-  %p Over &amp; Under is a retailer that sells custom cushions for outdoor furniture. Their web application had been abandoned and was running woefully outdated versions of Rails and #{link_to 'Spree', 'http://spreecommerce.com'}. I took it on as a rescue project (I have a soft spot for these) and, after performing a taxing upgrade, I've been leading the development of new features and gradually implementing a complete redesign.
-  %h4= link_to 'Rent Range', 'http://rentrange.com/'
-  %p (Currentinly in progress). This project was a Rails rewrite of a PHP application. My colleagues and I had to integrate several different feeds of housing data, integrate them in a local database, and then write a reporting framework to enable users and administrators to perform various kinds of analysis on the data.
-  %h4= link_to 'MDLogix', 'http://mdlogix.com/solutions/crms-clinical-research-management-system'
-  %p I contracted with MDLogix for a year and a half, developing and refactoring their Clinical Research Management System application. The most significant project I worked on was a series of APIs designed to integrate with a business partner's .NET application. I also led development of a major insurance-related module for Johns Hopkins.
-  %h4= link_to "Jordan Kitt's Music", 'http://jordankitts.com/'
-  %p Jordan Kitt's is the east coast's largest piano retailer. I wrote and maintain a Rails application that functions as a backend to the company's family of retail sites and handles internal weblead routing. I also provide support for most of the company's IT infrastructure.
+        %dt 2012-2013: Freelancing
+        %dd Some notable recent projects are included to the right.
 
-.history.section
-  %h2 History
-  %dl
-    %dt 2013: #{link_to 'Haught Codeworks', 'http://haughtcodeworks.com'}
-    %dd Senior devloper for a development firm based on Colorado
+        %dt 2010-2012: #{link_to 'MDLogix', 'http://mdlogix.com'}
+        %dd Part of a team of developers working on a clinical research CRM used by hospitals.
 
-    %dt 2012-2013: Freelancing
-    %dd See above for some notable recent projects.
+        %dt 2008-2010: #{link_to 'We Are Titans', 'http://wearetitans.net'}
+        %dd Co-founder and Lead Developer / Systems Administrator.
 
-    %dt 2010-2012: #{link_to 'MDLogix', 'http://mdlogix.com'}
-    %dd Part of a team of developers working on a clinical research CRM used by hospitals
+        %dt 2002-2003: Total Medical Consultants
+        %dd Part-time Systems Administrator.
 
-    %dt 2008-2010: #{link_to 'We Are Titans', 'http://wearetitans.net'}
-    %dd Co-founder and Lead Developer / Systems Administrator
+        %dt 1999-2009: #{link_to "Jordan Kitt's Music", "http://jordankitts.com/"}
+        %dd Webmaster / Developer / Advertising Administrator.
+    .span6.offset1
+      %h3 Applications
+      %dl
+        %dt= link_to 'Over &amp; Under', 'http://overandunderonline.com/'
+        %dd An online storefront for a business that makes custom cushions for outdoor furniture.
 
-    %dt 2002-2003: Total Medical Consultants
-    %dd Part-time Systems Administrator
+        %dt= link_to 'Rent Range', 'http://rentrange.com/'
+        %dd Custom reports based on aggregreted housing market data pulled from a number of different sources.
 
-    %dt 1999-2009: #{link_to "Jordan Kitt's Music", "http://jordankitts.com/"}
-    %dd Webmaster / Developer / Advertising Administrator
+        %dt= link_to "Jordan Kitt's Music", 'http://jordankitts.com/'
+        %dd The East Coast's largest piano dealer uses a custom application for content management and weblead generation and distribution.
+
+        %dt= link_to "Curator", 'http://alexanderzhdanov.com/'
+        %dd A customizable template for artists and galleries.
+
+        %dt= link_to "MDLogix", 'http://mdlogix.com/solutions/crms-clinical-research-management-system'
+        %dd A custom CMS used by medical professionals to manage their clinical research programs.
+
+        %dt= link_to "DOE International Energy Storage", "http://www.energystorageexchange.org/"
+        %dd A resource of green energy projects from around the world, developed in partnership with the Department of Energy.
+
+        %dt= link_to "Pairington", "http://pairington.com/"
+        %dd A searchable repository of beverage and food pairings contributed by users.
+
+        %dt= link_to "Ubiquidix", 'http://ubiquidox.com/'
+        %dd Document storage for corporations with web, email, and fax interfaces.
+
+        %dt= link_to "Your Garden Show", 'http://yourgardenshow.com/'
+        %dd A social network for gardenening enthusiasts.
+
+      %h3 Boutique Sites
+      %ul
+        %li= link_to "M Kelner Projects", "http://mkelner.com/"
+        %li= link_to "Mark Kelner", "http://markkelner.com/"
+        %li= link_to "Leiriope Design", "http://leiriope.com/"
+      %h3 References
+      %dl
+        %dt Chris Syllaba
+        %dd
+          CEO and owner, JKM Music Group
+          %br
+          (301) 943-0165
+
+        %dt Ray Fugere
+        %dd
+          CFO and co-owner, JKM Music Group
+          %br
+          (301) 452-1270
+
+        %dt Mark Kelner
+        %dd
+          Owner, M Kelner Gallery
+          %br
+          (202) 368-6900
+
+        %dt Marty Haught
+        %dd
+          CEO and Founder, Haught Codeworks
+          %br
+          (303) 834-7765
