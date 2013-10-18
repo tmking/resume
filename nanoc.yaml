@@ -1,5 +1,5 @@
---- 
-data_sources: 
+---
+data_sources:
 - items_root: /
   layouts_root: /
   type: filesystem_unified
@@ -7,5 +7,6 @@ output_dir: output
 
 deploy:
   default:
+    kind: rsync
     dst: "pla.to:/home/lordzork/vhosts/resume.pla.to"
     options: [ '-gpPrvz', "--delete-after" ]
