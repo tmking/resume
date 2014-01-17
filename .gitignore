@@ -1,3 +1,4 @@
 tmp/
-output/*.html
-output/*.css
+output/
+bower_components/
+crash.log

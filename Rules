@@ -1,21 +1,52 @@
 #!/usr/bin/env ruby
 
-compile '/styles/*' do
-  filter :sass
+passthrough '/assets/javascripts/*'
+passthrough '/assets/images/*'
+
+compile '/static/bower_components/jquery/jquery.min.js' do
+  nil
+end
+
+# Foundation styles
+route '/bower_components/jquery/jquery.min.js' do
+  '/assets/javascripts/' + item.identifier.split('/')[3] + '.js'
+end
+
+compile '/bower_components/foundation/js/foundation.min.js' do
+  nil
+end
+
+route '/bower_components/foundation/js/foundation.min.js' do
+  '/assets/javascripts/' + item.identifier.split('/')[3] + '.js'
+end
+ignore '/bower_components/**/*'
+
+compile '/assets/stylesheets/*' do
+  filter :sass, Compass.sass_engine_options
   filter :relativize_paths, :type => :css
 end
 
-compile '/' do
-  filter :haml
-  layout 'default'
+compile '*' do
+  if not item.binary?
+    filter :haml
+    layout 'default'
+  end
 end
 
-route '/' do
-  item.identifier + 'index.html'
+route '/assets/stylesheets/_*/' do
+  nil
 end
 
-route '/styles/*' do
-  '/' + item.identifier.split('/')[2] + '.css'
+route '/assets/stylesheets/*' do
+  '/assets/stylesheets/' + item.identifier.split("/")[3] + '.css'
+end
+
+route '*' do
+  if item.binary?
+    item.identifier.chop + '.' + item[:extension]
+  else
+    item.identifier + 'index.html'
+  end
 end
 
 layout '*', :haml

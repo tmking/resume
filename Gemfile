@@ -1,8 +1,11 @@
 source 'http://rubygems.org'
 
-gem 'nanoc3'
+gem 'nanoc'
+gem 'guard-nanoc'
 gem 'haml'
 gem 'sass'
+gem 'compass'
+gem 'foundation'
 gem 'sequel'
 gem 'sqlite3'
 gem 'rack'
