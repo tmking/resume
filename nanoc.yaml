@@ -11,5 +11,5 @@ output_dir: output
 deploy:
   default:
     kind: rsync
-    dst: "pla.to:/home/lordzork/vhosts/resume.pla.to"
+    dst: "pla.to:/home/lordzork/vhosts/timothymking.com"
     options: [ '-gpPrvz', "--delete-after" ]

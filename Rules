@@ -2,6 +2,7 @@
 
 passthrough '/assets/javascripts/*'
 passthrough '/assets/images/*'
+passthrough 'robots'
 
 compile '/static/bower_components/jquery/jquery.min.js' do
   nil

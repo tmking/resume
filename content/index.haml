@@ -1,102 +1,141 @@
 ---
 title: Timothy M. King
 ---
-.row
-  %header
-    .small-2.columns
-      %br
-      %img{ src: "/assets/images/me.jpg", alt: "Photo" }
-    .small-10.columns
-      %h1 Hello.
-      %h2 I'm Timothy King and this is my professional resume.
-.row
-  .small-5.columns
-    %h3 About
-    %p.lead I help people solve their business problems by working with them to create comprehensive web application solutions.
-    %p I primarily use Ruby on Rails, and more and more often, Javascript. I've worked with all of the major SQL databases, as well as some of the popular no-SQL options.
-    %p I am also proficient in HTML, CSS, and jQuery (as well as HAML, SASS, and Cofeescript). I also have experience with most of the popular Javascript frameworks such as Ember and Backbone. In summary: <b>I am a full stack developer.</b>
-    %p Additionally, I'm adept at shell scripting and UNIX systems administration and I frequently draw on these skills in my projects. I am familiar with Agile methodologies and distributed teamwork.
-    %p My professional goal is to work in environments in which I can employ the full gamut of these skills, alongside people who value thorough planning, meticulous execution, and good communication.
-    %p To the right, I list some of the many development projects I've contributed to over the years. Occasionally, I also will design, create, and host static boutique sites for friends or businesses with whom I have an especially close relationship. I've listed some of these as well.
-    %p You may also view my #{link_to('github account', 'http://github.com/tmking')} or email me at #{link_to('tmk@lordzork.com', 'mailto:tmk@lordzork.com')}.
 
-    %h3 Timeline
-    %dl
-      %dt 2013: #{link_to 'Haught Codeworks', 'http://haughtcodeworks.com'}
-      %dd Senior devloper for a development firm in Colorado.
+%header.grey
+  .row
+    .small-12.columns
+      %h1.hide-for-medium-up Hello, I'm Timothy King.
+      %img{ src: '/assets/images/me.jpg', alt: 'Timothy M. King' }
+      %h1.hide-for-small Hello, I'm Timothy King.
+      %h2.subheader.hide-for-small This is my professional resume.
+      .right.hide-for-small= link_to 'Contact Me', 'mailto:tmk@lordzork.com', class: 'button radius contact-large'
+      %p.lead I'm a self-taught, <strong>full stack web developer</strong> with over fifteen years of experience writing software for the web. My background is in PHP, but for the last five years I've worked almost exclusively in Ruby, and increasingly often, Javascript. I'm a proponent of Agile practices and methods, test-driven development, and remote work.
+      .hide-for-medium-up= link_to 'Contact Me', 'mailto:tmk@lordzork.com', class: 'button radius contact-small'
+%section
+  .row
+    .small-12.large-8.columns
+      %h2 Recent Work
+      %h3 RubyCentral CFP App
+      %p An application for submitting, reviewing, and managing CFPs for conferences. In addition to cleaning up and unifying the styling of the frontend, I worked on the permissions system that allows users with different roles to access different functionality and areas of the app. I was also the primary developer behind the functionality handling speaker invitations.
+      %h3 Unison Captivator
+      %p An application used by professional conference attendees to schedule their attendence to talks, take notes, participate in surveys, and communicate with other users. I worked on both the frontend and backend, as well as provisioning the application and database server clusters. Additionally, I fixed bugs and implemented new features for the administrative side of the app.
 
-      %dt 2012-2013: Freelancing
-      %dd Some notable recent projects are included to the right.
+    %hr.show-for-small-only
+    .small-12.large-4.columns
+      %h2 Timeline
+      %dl
+        %dt 2013-2014: #{link_to 'Haught Codeworks', 'http://haughtcodeworks.com'}
+        %dd Remote developer for a small consultancy based on Colorado.
 
-      %dt 2010-2012: #{link_to 'MDLogix', 'http://mdlogix.com'}
-      %dd Part of a team of developers working on a clinical research CRM used by hospitals.
+        %dt 2012-2013: #{link_to 'We Are Titans', 'http://wearetitans.net'}
+        %dd Developer / DevOps
 
-      %dt 2008-2010: #{link_to 'We Are Titans', 'http://wearetitans.net'}
-      %dd Co-founder and Lead Developer / Systems Administrator.
+        %dt 2010-2012: #{link_to 'MDLogix', 'http://mdlogix.com'}
+        %dd Part of a team of developers working on a clinical research CRM used by hospitals.
 
-      %dt 2002-2003: Total Medical Consultants
-      %dd Part-time Systems Administrator.
+        %dt 2008-2010: #{link_to 'We Are Titans', 'http://wearetitans.net'}
+        %dd Co-founder and Lead Developer / DevOps
 
-      %dt 1999-2009: #{link_to "Jordan Kitt's Music", "http://jordankitts.com/"}
-      %dd Webmaster / Developer / Advertising Administrator.
-  .small-6.small-offset-1.columns
-    %h3 Applications
-    %dl
-      %dt= link_to 'Over &amp; Under', 'http://overandunderonline.com/'
-      %dd An online storefront for a business that makes custom cushions for outdoor furniture.
-
-      %dt= link_to 'Rent Range', 'http://rentrange.com/'
-      %dd Custom reports based on aggregreted housing market data pulled from a number of different sources.
-
-      %dt= link_to "Jordan Kitt's Music", 'http://jordankitts.com/'
-      %dd The East Coast's largest piano dealer uses a custom application for content management and weblead generation and distribution.
-
-      %dt= link_to "Curator", 'http://alexanderzhdanov.com/'
-      %dd A customizable template for artists and galleries.
-
-      %dt= link_to "MDLogix", 'http://mdlogix.com/solutions/crms-clinical-research-management-system'
-      %dd A custom CMS used by medical professionals to manage their clinical research programs.
-
-      %dt= link_to "DOE International Energy Storage", "http://www.energystorageexchange.org/"
-      %dd A resource of green energy projects from around the world, developed in partnership with the Department of Energy.
-
-      %dt= link_to "Pairington", "http://pairington.com/"
-      %dd A searchable repository of beverage and food pairings contributed by users.
-
-      %dt= link_to "Ubiquidix", 'http://ubiquidox.com/'
-      %dd Document storage for corporations with web, email, and fax interfaces.
-
-      %dt= link_to "Your Garden Show", 'http://yourgardenshow.com/'
-      %dd A social network for gardenening enthusiasts.
-
-    %h3 Boutique Sites
-    %ul
-      %li= link_to "Field Custom English Tailors", "http://fieldtailors.com/"
-      %li= link_to "M Kelner Projects", "http://mkelner.com/"
-      %li= link_to "Mark Kelner", "http://markkelner.com/"
-      %li= link_to "Leiriope Design", "http://leiriope.com/"
-    %h3 References
-    %dl
-      %dt Chris Syllaba
-      %dd
-        CEO and owner, JKM Music Group
-        %br
-        (301) 943-0165
-
-      %dt Ray Fugere
-      %dd
-        CFO and co-owner, JKM Music Group
-        %br
-        (301) 452-1270
-
-      %dt Mark Kelner
-      %dd
-        Owner, M Kelner Gallery
-        %br
-        (202) 368-6900
-
-      %dt Marty Haught
-      %dd
-        CEO and Founder, Haught Codeworks
-        %br
-        (303) 834-7765
+        %dt 1999-2009: #{link_to "Jordan Kitt's Music", "http://jordankitts.com/"}
+        %dd Webmaster / Developer / Advertising Administrator.
+%section
+  %hr
+  .row
+    .large-12.columns
+      %h2 Portfolio
+  .row
+    .large-6.columns
+      %h3 Team
+      %dl
+        %dt RentRange
+        %dd An application that generates custom reports based on aggregated real estate data. I provisioned the app and database servers, and wrote some PDF generation code and a parser for one of the data feeds, a 1 GB XML file, along with the accompanying business logic to integrate it in the local database.
+        %dt= link_to "DOE International Energy Storage", "http://www.energystorageexchange.org/"
+        %dd A searchable resource for green energy projects from around the world, developed in partnership with the Department of Energy. I inherited the codebase from another developer and maintained it for about a year, added new features (most notably an administrative backend), and fixed bugs. This application relies heavily on Solr for search functionality.
+        %dt= link_to "Pairington", "http://pairington.com/"
+        %dd A Rails and Javascript prototype for a searchable, user-driven repository of beverage and food pairings. I was brought on to finish the project after the original developer left. I wrote the remaining features, standardized the UI, fixed bugs in the search functionality and ratings business logic, and designed a landing page.
+        %dt= link_to "CRMS", 'http://mdlogix.com/solutions/crms-clinical-research-management-system'
+        %dd An advanced CMS written in Rails and used by medical professionals to manage their clinical research programs. During the year and a half that I worked on this project, I lead development for a major feature for Johns Hopkins, and also worked on creating a set of APIs to allow the app to interface with the legacy ASP.net system of a third-party business partner.
+        %dt Your Garden Show
+        %dd A social network for gardening enthusiasts. This was a joint Rails project between We Are Titans and Pivotal Labs in San Francisco. I was part of the original development team, and eventually became the sole maintainer. I wrote a good portion of the business logic, as well as a critical Javascript widget on one of the primary landing pages.
+    .large-6.columns
+      %h3 Solo
+      %dl
+        %dt= link_to "Jordan Kitt's Music", 'http://jordankitts.com/'
+        %dd A Rails application that handles content management and weblead distribution for the East Coast's largest piano retailer, written and maintained exclusively by me over the past five years. The app uses a heavily customized Rails Admin backend, four separate site layouts and designs that are contextual to different request domains, and an intricate system for managing the company's promotional events.
+        %dt= link_to 'Over &amp; Under', 'http://overandunderonline.com/'
+        %dd A legacy Spree application which I upgraded to the latest versions of Spree and Rails. The business that sells custom cushions for outdoor furniture. Since the customer can alter nearly any aspect of the products, the original developer wrote a Spree extension with custom calculators and product varients. I have continued to maintain this extension, along with creating some custom functionality for the admin backend.
+        %dt= link_to "Curator", 'http://alexanderzhdanov.com/'
+        %dd A Rails application that provides a CMS for users&mdash;artists or gallery owners&mdash;to populate an online gallery template with images and text. I wrote some custom Javascript that enables users to create their own thumbnails in the browser after uploading an image.
+      %h3 Boutique
+      %dl
+        %dt= link_to "Field Custom English Tailors", "http://fieldtailors.com/"
+        %dd The homepage for Washington DC's premier bespoke tailor.
+        %dt= link_to "M Kelner Projects", "http://mkelner.com/"
+        %dd A showcase of artwork sold by DC gallerist Mark Kelner, a close personal friend of mine.
+        %dt= link_to "Mark Kelner's Art Portfolio", "http://markkelner.com/"
+        %dd A slideshow presentation of Mark's original concept art.
+        %dt= link_to "Leiriope Design", "http://leiriope.com/"
+        %dd The homepage for my friend Laura Kamp's design consultancy.
+%section.grey
+  .row
+    .large-12.columns
+      %h2 Skills
+      .row
+        .large-3.columns
+          %h4 Backend
+          %ul.circle
+            %li Ruby on Rails
+            %li Sinatra
+            %li Nanoc
+            %li Rspec
+            %li Capybara
+            %li Capistrano
+            %li Cucumber
+            %li Git and SVN
+            %li BDD and TDD
+            %li MySQL and PostgreSQL
+        .large-3.columns
+          %h4 Frontend
+          %ul.circle
+            %li HTML
+            %li CSS
+            %li jQuery
+            %li HAML / SASS / SCSS
+            %li Bootstrap
+            %li Foundation
+            %li Compass
+            %li Blueprint
+            %li Photoshop (basic)
+        .large-3.columns
+          %h4 DevOps
+          %ul.circle
+            %li Linux and FreeBSD
+            %li Unix systems administration
+            %li Zsh and Bash scripting
+            %li Nginx and Apache
+            %li Unicorn and Passenger
+            %li Postfix and Spamassassain
+            %li Load balancing
+            %li Server monitoring
+            %li Server security
+        .large-3.columns
+          %h4 Familiar With...
+          %ul.circle
+            %li Python
+            %li CouchDB and MongoDB
+            %li Coffeescript
+            %li Backbone
+            %li Angular
+            %li Ember
+            %li Dart
+            %li Meteor
+%footer
+  .row
+    .large-12.columns
+      %p References available #{link_to 'upon request', "mailto:tmk@lordzork.com?subject=I%20want%20to%20work%20with%20you!%20Please%20send%20me%20your%20references."}.
+      .pull-right-for-medium-up
+        %a{ href: 'http://github.com/tmking', title: 'View my GitHub account' }
+          %img{ src: '/assets/images/github.png', alt: 'View my GitHub account' }
+        %a{ href: 'http://lnkd.in/dUWmQne', title: 'View my LinkedIn profile' }
+          %img{ src: '/assets/images/linkedin.png', alt: 'View my LinkedIn profile' }
