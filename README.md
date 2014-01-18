@@ -1,4 +1,6 @@
-This is my professional resume. You can view it [here](http://timothymking.com/)
+This is my professional resume. You can view it [here](http://timothymking.com/).
+
+The original Foundation 5 documentation is below.
 
 # Foundation Compass Template
 
