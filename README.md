@@ -1,4 +1,4 @@
-This is my professional resume. You can view it [here](http://resume.lordzork.com/)
+This is my professional resume. You can view it [here](http://timothymking.com/)
 
 # Foundation Compass Template
 
