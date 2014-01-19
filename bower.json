@@ -2,6 +2,7 @@
   "name": "foundation-compass-app",
   "version": "0.0.1",
   "private": "true",
+  "directory": "static/bower_components",
   "dependencies": {
     "foundation": "zurb/bower-foundation"
   }

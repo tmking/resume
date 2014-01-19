@@ -7,6 +7,32 @@
     %meta(name="robots" content="noindex, nofollow")/
     %title= item[:title]
     %link(href="/assets/stylesheets/app.css" rel="stylesheet" media="screen, print")/
+    %script(src="/assets/javascripts/jquery.min.js" type="text/javascript")
+    %script(src="/assets/javascripts/foundation.min.js" type="text/javascript")
+    %script(src="/assets/javascripts/app.js" type="text/javascript")
 
   %body
-    = yield
+    %a{ name: 'home' }
+    .off-canvas-wrap
+      .inner-wrap
+        %nav.tab-bar.hide-for-large
+          %section.left-small
+            %a.left-off-canvas-toggle.menu-icon
+              %span
+          %section.middle.tab-bar-section
+            %h1 Menu
+        %aside.left-off-canvas-menu
+          %ul.off-canvas-list
+            %li
+              %strong= link_to 'Contact Me', 'mailto:tmk@lordzork.com'
+            %li= link_to 'Recent Work', '#recent'
+            %li= link_to 'Timeline', '#timeline'
+            %li
+              %label Portfolio
+            %li= link_to 'Team', '#team'
+            %li= link_to 'Solo', '#solo'
+            %li= link_to 'Boutique', '#boutique'
+            %li
+              %label Skills
+        %section.main-section= yield
+    %a.exit-off-canvas

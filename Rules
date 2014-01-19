@@ -4,13 +4,13 @@ passthrough '/assets/javascripts/*'
 passthrough '/assets/images/*'
 passthrough 'robots'
 
-compile '/static/bower_components/jquery/jquery.min.js' do
+# Foundation javascript files
+compile '/bower_components/jquery/jquery.min.js' do
   nil
 end
 
-# Foundation styles
 route '/bower_components/jquery/jquery.min.js' do
-  '/assets/javascripts/' + item.identifier.split('/')[3] + '.js'
+  '/assets/javascripts/' + item.identifier.split('/')[3]
 end
 
 compile '/bower_components/foundation/js/foundation.min.js' do
@@ -18,7 +18,7 @@ compile '/bower_components/foundation/js/foundation.min.js' do
 end
 
 route '/bower_components/foundation/js/foundation.min.js' do
-  '/assets/javascripts/' + item.identifier.split('/')[3] + '.js'
+  '/assets/javascripts/' + item.identifier.split('/')[4]
 end
 ignore '/bower_components/**/*'
 
