@@ -15,12 +15,10 @@
     %a{ name: 'home' }
     .off-canvas-wrap
       .inner-wrap
-        %nav.tab-bar.hide-for-large
+        %nav.tab-bar.hide-for-large{ data: { topbar: true } }
           %section.left-small
             %a.left-off-canvas-toggle.menu-icon
               %span
-          %section.middle.tab-bar-section
-            %h1 Menu
         %aside.left-off-canvas-menu
           %ul.off-canvas-list
             %li
@@ -38,3 +36,7 @@
             %li= link_to 'More Info', '#footer'
         %section.main-section= yield
     %a.exit-off-canvas
+  :javascript
+    $(document).ready(function() {
+      $(document).foundation();
+    });
